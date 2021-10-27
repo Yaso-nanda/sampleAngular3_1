@@ -1,0 +1,9 @@
+version: "3"
+services:
+     angular:
+         image: angulr
+         ports:
+           - 4445:8080
+         build:
+            context: "./"
+            dockerfile: "Dockerfile"

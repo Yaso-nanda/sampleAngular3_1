@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>employee-master</groupId>
+  <artifactId>employee-master</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <build>
+   <finalName>angular-frontend</finalName>
+    <plugins>
+    <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.2</version>
+        <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+
+            <!-- Add frontend folder to war package -->
+            <webResources>
+                <resource>
+                    <directory>dist/angular-frontend</directory>
+                </resource>
+            </webResources>
+
+        </configuration>
+    </plugin>
+    </plugins>
+  </build>
+</project>
